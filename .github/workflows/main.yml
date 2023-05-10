@@ -28,7 +28,7 @@ jobs:
       - name: Build the Docker image
         run: |
           #docker build -t 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA . 
-          docker build -t 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA .
+          docker build -t 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA .
 
           docker push 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA
 
