@@ -36,7 +36,7 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@wohlig.com"
 
-          yq e '.spec.template.spec.containers[0].image = "964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:${{ env.GITHUB_BRANCH }}"' -i deployment.apps/deployment-api.yaml
+          yq e '.spec.template.spec.containers[0].image = "964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:${{ env.GITHUB_BRANCH }}"' -i deployment-api.yaml
 
           git add .
           git commit -m "updating newer image"
