@@ -30,8 +30,8 @@ jobs:
           docker build -t 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA . 
           docker push 964215206189.dkr.ecr.ap-south-1.amazonaws.com/myrepo:$GITHUB_REF_NAME-$GITHUB_SHA
 
-          git clone https://${{ secrets.AWS_GITHUB_USER }}:${{ secrets.AWS_GITHUB_TOKEN }}@github.com/Sneha-D/Repo
-          cd Repo
+          git clone https://${{ secrets.AWS_GITHUB_USER }}:${{ secrets.AWS_GITHUB_TOKEN }}@github.com/sneha-dhande123/GitOps1
+          cd GitOps1
                   
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@wohlig.com"
