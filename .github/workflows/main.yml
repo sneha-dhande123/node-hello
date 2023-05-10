@@ -2,8 +2,7 @@ name: test
 on:
   push:
     branches:
- 
-      - main
+     - master
 env:
   AWS_REPOSITORY_URL: ${{ secrets.AWS_REPOSITORY_URL }}
   GITHUB_TOKEN: ${{ secrets.AWS_GITHUB_TOKEN }}
